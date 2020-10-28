@@ -1,0 +1,91 @@
+/* START UTILITIES */
+
+/* END UTILITIES */
+
+/* START HEADER */
+
+/* navbar */
+#my_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #ffffff;
+  height: 65px;
+  line-height: 65px;
+}
+
+#nav_logo {
+  width: 170px;
+}
+
+.nav_list_left,
+.nav_list_right {
+  list-style: none;
+  vertical-align: middle;
+}
+
+.nav_list_left li,
+.nav_list_right li {
+  display: inline-block;
+}
+
+.nav_list_left a {
+  display: inline-block;
+  color: black;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.nav_list_left i,
+.nav_list_right i {
+  margin-left: 5px;
+}
+
+.nav_list_right a {
+  display: inline-block;
+  color: black;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.nav_list_left a:hover,
+.nav_list_right a:hover {
+  text-decoration: none;
+  color: #006aff;
+}
+
+.nav_list_right .btn_signup {
+  display: inline;
+  color: #006aff;
+  border: 1px solid #006aff;
+  padding: 10px 16px;
+  border-radius: 5px;
+}
+
+.nav_list_right .btn_signup:hover {
+  color: #ffffff;
+  background-color: #006aff;
+}
+
+#hambuger_icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#hambuger_icon i {
+  color: #006aff;
+  font-size: 20px;
+}
+/* navbar */
+
+/* jumbotron */
+#my_jumbotron {
+  height: 1200px;
+  background-color: #006aff;
+  margin-top: 65px;
+}
+/* /jumbotron */
+
+/* END HEADER */
