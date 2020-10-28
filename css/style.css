@@ -86,7 +86,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* jumbotron */
 #my_jumbotron {
-  background-color: #006aff;
+  background-image: url("../img/jumbotron.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   margin-top: 65px;
   padding: 50px 0;
 }
