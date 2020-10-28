@@ -1,4 +1,8 @@
 /* START UTILITIES */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
 
 /* END UTILITIES */
 
@@ -82,10 +86,148 @@
 
 /* jumbotron */
 #my_jumbotron {
-  height: 1200px;
   background-color: #006aff;
   margin-top: 65px;
+  padding: 50px 0;
+}
+
+#my_jumbotron h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#my_jumbotron h3 {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.my_jumbotron_box {
+  background-color: #ffffff;
+  padding: 30px 10px;
+  border-radius: 5px;
+}
+
+.my_jumbotron_box h2 {
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.my_jumbotron_box p {
+  color: #000000;
+  font-size: 12px;
+}
+
+.my_jumbotron_box p > a {
+  color: #006aff;
+  text-decoration: underline;
+}
+
+.my_jumbotron_box p > a:hover {
+  text-decoration: none;
+}
+
+.my_jumbotron_box #get_started {
+  color: #006aff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.my_jumbotron_box .my_form {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #555;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.my_jumbotron_box .my_form:focus {
+  border-color: #006aff;
+  outline:#006aff;
+}
+
+.btn_jumbotron {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.btn_account {
+  color: #ffffff;
+  background-color: #579AFF;
+}
+
+.btn_account:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #006aff;
+}
+
+.btn_google {
+  position: relative;
+  color: #555;;
+  background-color: #ffffff;
+  box-shadow: 2px 2px rgba(0,0,0,.1);
+}
+
+.btn_google:hover {
+  color:#006aff;
+}
+
+#google_icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 100%;
 }
 /* /jumbotron */
 
 /* END HEADER */
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  #my_jumbotron h1 {
+  font-size: 50px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  #my_jumbotron h1 {
+  font-size: 40px;
+  }
+
+  #my_jumbotron h3 {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+
+  #my_jumbotron h1 {
+  font-size: 35px;
+  }
+
+  #my_jumbotron h3 {
+    margin-bottom: 20px;
+  }
+
+}
