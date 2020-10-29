@@ -29,6 +29,32 @@ h3 {
   line-height: 1.5;
 }
 
+.carousel_description {
+  margin: 15px 0;
+  color: #031b4e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.carousel_list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.carousel_list li {
+  display: inline-block;
+  color: #006aff;
+  margin-right: 5px;
+}
+
+.carousel_list li i {
+  font-size: 12px;
+}
+
+.carousel_list li:last-child {
+  margin-right: 0;
+}
+
 .blue_h5 {
   margin: 20px 0 10px;
   font-size: 20px;
@@ -47,9 +73,10 @@ h3 {
   left: 0;
   width: 100%;
   z-index: 3;
-  background-color: #ffffff;
   height: 65px;
   line-height: 65px;
+  background-color: #ffffff;
+  box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
 }
 
 #nav_logo {
@@ -288,14 +315,50 @@ h3 {
 }
 
 #deploy img {
-  width: 40px;
+  height: 40px;
 }
 
 #deploy .deploy_item {
   min-height: 230px;
 }
-
 /* /deploy */
+
+/* carousel one */
+#carousel-one {
+  padding: 40px 0;
+  background-color: #F3F5F9;
+}
+
+#carousel-one .description {
+  margin: 20px 0 50px;
+}
+
+#carousel-one .carousel_item img {
+  width: 80%;
+}
+
+#carousel-one .carousel_item::before {
+  display: inline-block;
+  margin-right: 10px;
+  content: "\f104";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #031b4e;
+}
+
+#carousel-one .carousel_item::after {
+  display: inline-block;
+  margin-left: 10px;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #031b4e;
+}
+
+
+/* /carousel one */
 
 /* END MAIN */
 
@@ -306,6 +369,9 @@ h3 {
   font-size: 50px;
   }
 
+  .carousel_description {
+    margin: 15px 0 50px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -323,6 +389,18 @@ h3 {
     margin-top: 30px;
   }
 
+  #carousel-one .carousel_item img {
+    width: 100%;
+  }
+
+  #carousel-one .carousel_item::before,
+  #carousel-one .carousel_item::after {
+    display: none;
+  }
+
+  .carousel_description {
+    margin: 15px 0 100px;
+  }
 
 }
 
@@ -340,4 +418,18 @@ h3 {
     min-height: auto;
     margin-top: 20px;
   }
+
+  #carousel-one .carousel_item img {
+    width: 100%;
+  }
+
+  #carousel-one .carousel_item::before,
+  #carousel-one .carousel_item::after {
+    display: none;
+  }
+
+  .carousel_description {
+    margin: 15px 0 100px;
+  }
+
 }
