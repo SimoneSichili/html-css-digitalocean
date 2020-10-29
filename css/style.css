@@ -399,17 +399,21 @@ h3 {
   background-size: cover;
 }
 
+#service .row {
+  margin: 0;
+}
+
 #service h3 {
   color: white;
   margin-bottom: 20px;
 }
 
 #service .data_center_left {
-  padding-right: 30px;
+  padding-left: 0;
 }
 
 #service .data_center_right {
-  padding-left: 30px;
+  padding-right: 0;
 }
 
 #service .data_center_item {
@@ -504,7 +508,35 @@ h3 {
 }
 /* /carousel two */
 
+/* get started */
+#get-started {
+  padding: 60px 0;
+  background-image: url("../img/getstarted_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#get-started h3 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.btn_white {
+  display: inline-block;
+  padding: 20px;
+  color: #006aff;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+/* /get started */
+
 /* END MAIN */
+
+/* START FOOTER */
+
+/* END FOOTER */
 
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -518,11 +550,12 @@ h3 {
   }
 
   #service .data_center_left {
-    padding-right: 15px;
+    padding-right: 0;
   }
 
   #service .data_center_right {
-    padding-left: 15px;
+    margin-top: 30px;
+    padding-left: 0;
   }
 
 }
@@ -566,11 +599,12 @@ h3 {
   }
 
   #service .data_center_left {
-    padding-right: 15px;
+    padding-right: 0;
   }
 
   #service .data_center_right {
-    padding-left: 15px;
+    margin-top: 30px;
+    padding-left: 0;
   }
 
 }
@@ -630,11 +664,12 @@ h3 {
   }
 
   #service .data_center_left {
-    padding-right: 15px;
+    padding-right: 0;
   }
 
   #service .data_center_right {
-    padding-left: 15px;
+    margin-top: 30px;
+    padding-left: 0;
   }
 
   #carousel-two .carousel_item .description {
@@ -663,6 +698,7 @@ h3 {
 
   #service .speed_test {
     width: 100%;
+    margin-top: 10px;
     text-align: left;
   }
 
