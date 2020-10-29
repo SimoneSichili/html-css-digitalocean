@@ -334,12 +334,18 @@ h3 {
 }
 
 #carousel-one .carousel_item img {
-  width: 80%;
+  width: 100%;
+}
+
+#carousel-one .carousel_item {
+  position: relative;
 }
 
 #carousel-one .carousel_item::before {
-  display: inline-block;
-  margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
   content: "\f104";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -348,8 +354,10 @@ h3 {
 }
 
 #carousel-one .carousel_item::after {
-  display: inline-block;
-  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -429,6 +437,73 @@ h3 {
 }
 /* /service */
 
+/* carousel two */
+#carousel-two {
+  padding: 40px 0;
+  background-color: #F3F5F9;
+}
+
+#carousel-two h3 {
+  margin-bottom: 60px;
+}
+
+
+#carousel-two .carousel_item .description {
+  margin: 20px 0 10px;
+  line-height: 1.2;
+}
+
+#carousel-two .carousel_item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 50px 10px;
+  background-color: #ffffff;
+}
+
+#carousel-two .carousel_item .blue_h5 {
+  margin-bottom: 5px;
+}
+
+#carousel-two .carousel_item .carousel_description {
+  color: #485583;
+  margin: 0 0 30px;
+}
+
+#carousel-two .carousel_item a {
+  color: #006aff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#carousel-two .carousel_item img {
+  width: 35%;
+}
+
+#carousel-two .carousel_item::before {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  content: "\f104";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #031b4e;
+}
+
+#carousel-two .carousel_item::after {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #031b4e;
+}
+/* /carousel two */
+
 /* END MAIN */
 
 
@@ -476,7 +551,9 @@ h3 {
   }
 
   #carousel-one .carousel_item::before,
-  #carousel-one .carousel_item::after {
+  #carousel-one .carousel_item::after,
+  #carousel-two .carousel_item::before,
+  #carousel-two .carousel_item::after {
     display: none;
   }
 
@@ -538,7 +615,9 @@ h3 {
   }
 
   #carousel-one .carousel_item::before,
-  #carousel-one .carousel_item::after {
+  #carousel-one .carousel_item::after,
+  #carousel-two .carousel_item::before,
+  #carousel-two .carousel_item::after {
     display: none;
   }
 
@@ -556,6 +635,18 @@ h3 {
 
   #service .data_center_right {
     padding-left: 15px;
+  }
+
+  #carousel-two .carousel_item .description {
+    font-size: 16px;
+  }
+
+  #carousel-two .carousel_item .blue_h5 {
+    font-size: 14px;
+  }
+
+  #carousel-two .carousel_item .carousel_description {
+    font-size: 14px;
   }
 
 }
