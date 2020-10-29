@@ -56,7 +56,7 @@ h3 {
 }
 
 .blue_h5 {
-  margin: 20px 0 10px;
+  margin: 10px 0 10px;
   font-size: 20px;
   color: #031b4e;
   font-weight: 700;
@@ -356,9 +356,31 @@ h3 {
   font-size: 40px;
   color: #031b4e;
 }
-
-
 /* /carousel one */
+
+/* features */
+#features {
+  padding: 40px 0;
+}
+
+#features h3 {
+  margin-bottom: 40px;
+}
+
+#features img {
+  height: 40px;
+}
+
+#features .small_description {
+  margin-bottom: 10px;
+}
+
+#features a {
+  color: #006aff;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* /features */
 
 /* END MAIN */
 
@@ -389,6 +411,10 @@ h3 {
     margin-top: 30px;
   }
 
+  #deploy img {
+    margin-bottom: 20px;
+  }
+
   #carousel-one .carousel_item img {
     width: 100%;
   }
@@ -402,9 +428,17 @@ h3 {
     margin: 15px 0 100px;
   }
 
+  #features .features_item:not(:first-of-type) img {
+    margin: 40px 0 20px;
+  }
+
 }
 
 @media screen and (max-width: 767px){
+
+  h3 {
+    font-size: 30px;
+  }
 
   #my_jumbotron h1 {
   font-size: 35px;
@@ -419,6 +453,10 @@ h3 {
     margin-top: 20px;
   }
 
+  #deploy img {
+    margin-bottom: 20px;
+  }
+
   #carousel-one .carousel_item img {
     width: 100%;
   }
@@ -430,6 +468,10 @@ h3 {
 
   .carousel_description {
     margin: 15px 0 100px;
+  }
+
+  #features .features_item:not(:first-of-type) img {
+    margin: 40px 0 20px;
   }
 
 }
