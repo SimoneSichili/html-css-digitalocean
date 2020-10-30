@@ -11,6 +11,12 @@ h3 {
   text-align: center;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .jumbotron_description {
   color: #d6d6d6;
   font-size: 24px;
@@ -581,6 +587,7 @@ h3 {
   font-size: 16px;
   font-weight: 700;
   border-radius: 5px;
+  border: 1px solid #ffffff;
 }
 
 .btn_white:hover {
@@ -609,10 +616,65 @@ footer .footer_made {
   color: #485583;
   font-weight: 700;
 }
-
-
 /* END FOOTER */
 
+/* WIDGET */
+#widget {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+#widget .widget_icon {
+  float: right;
+  position: relative;
+  width: 60px;
+  margin-left: 15px;
+}
+
+#widget .widget_icon img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#widget .widget_icon span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  display: inline-block;
+  width: 30px;
+  height:30px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+}
+
+#widget .widget_textarea {
+  position: relative;
+  float: right;
+  width: 350px;
+  height: 60px;
+  padding: 10px 25px 10px 10px;
+  color: #031b4e;
+  font-weight: 700;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+#widget .widget_textarea i {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  transform: translateX(95%);
+  font-size: 25px;
+  color: white;
+}
+
+/* WIDGET */
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
@@ -635,6 +697,22 @@ footer .footer_made {
 
   footer [class*="col-"]:not(:first-child) {
     margin-top: 20px;
+  }
+
+  #widget {
+    position: fixed;
+    left: 30px;
+    bottom: 40px;
+  }
+
+  #widget .widget_icon {
+    float: none;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+
+  #widget .widget_textarea {
+    float: none;
   }
 
 }
@@ -688,6 +766,10 @@ footer .footer_made {
 
   footer [class*="col-"]:not(:first-child) {
     margin-top: 20px;
+  }
+
+  #widget {
+    display: none;
   }
 
 }
@@ -769,6 +851,10 @@ footer .footer_made {
 
   footer [class*="col-"]:not(:first-child) {
     margin-top: 20px;
+  }
+
+  #widget {
+    display: none;
   }
 
 }
