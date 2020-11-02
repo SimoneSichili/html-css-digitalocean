@@ -868,18 +868,8 @@ footer .footer_made {
 
 @media screen and (max-width: 500px) {
 
-  #service .server_number {
-    width: 10%;
-  }
-
-  #service .server_name {
-    width: 80%;
-  }
-
-  #service .speed_test {
-    width: 100%;
-    margin-top: 10px;
-    text-align: left;
+  #service {
+    font-size: 9px;
   }
 
 }
